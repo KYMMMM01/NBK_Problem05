@@ -93,6 +93,7 @@ void AMyActor::Move(float Distance)
 		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Blue,
 			FString::Printf(TEXT("이동 후 위치: %s"), *GetActorLocation().ToString()));
 
+		UE_LOG(LogTemp, Warning, TEXT("이동 후 위치: %s"), *GetActorLocation().ToString());
 	}
 }
 
@@ -108,6 +109,7 @@ void AMyActor::Turn(float Angle)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Green,
 			FString::Printf(TEXT("회전 후 각도: %s"), *GetActorRotation().ToString()));
-
+		
+		UE_LOG(LogTemp, Warning, TEXT("회전 후 각도: %s"), *GetActorRotation().ToString());
 	}
 }

@@ -23,8 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void Move(float Distance);   //이동
-	void Turn(float Angle);      //회전
+	void Move(float Distance); //이동
+	void Turn(float Angle); //회전
 
 private:
 	float TravelDistance = 0.f;
